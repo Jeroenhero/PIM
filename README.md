@@ -11,3 +11,5 @@ Created By:
 Resources used:
 - Rijksmuseum API: https://www.rijksmuseum.nl/nl/api
 - Bootstrap 3.3: https://getbootstrap.com/docs/3.3/
+- Slack: Soon
+- Trello: https://trello.com/projectinteractievemultimedia
