@@ -1,0 +1,33 @@
+header {
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
+    background: url("rijksmuseum.png") no-repeat center;
+    z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+    font-size: 500%;
+}
+
+header h5 {
+    color: white;
+    font-size: 200%;
+    vertical-align: bottom
+}
+
+#info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    height: 100px;
+}
