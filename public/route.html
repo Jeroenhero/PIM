@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jouw persoonlijke route</title>
+</head>
+<body>
+
+<h1>Jouw persoonlijke route door het Rijksmuseum:</h1>
+
+<canvas id="myCanvas" width="1186" height="406"></canvas>
+
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        base_image = new Image();
+        base_image.src = 'rijksmuseumlegenda.png';
+        base_image.onload = function(){
+            ctx.drawImage(base_image, 0, 0);
+        }
+        ctx.drawImage(img, 0, 0);
+        ctx.moveTo(0,0);
+        ctx.lineTo(100,200);
+        ctx.stroke();
+    };
+</script>
+
+</body>
+</html>
