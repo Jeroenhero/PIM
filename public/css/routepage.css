@@ -1,0 +1,15 @@
+.printbutton {
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.printbutton span {
+    font-size: 250%;
+    color: black;
+    padding-top: 30px;
+}
+@media print {
+    .printbutton {
+        display: none;
+    }
+}

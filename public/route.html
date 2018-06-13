@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Jouw persoonlijke route</title>
+    <script type="text/javascript" src="js/imagegenerator.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/routepage.css">
+
 </head>
 <body>
 
-<h1>Jouw persoonlijke route door het Rijksmuseum:</h1>
+<div class="container">
+    <div class="col-md-10">
+        <h1 class="text-center">Jouw persoonlijke route door het Rijksmuseum:</h1>
+    </div>
+    <div class="col-md-2">
+        <a href="#" class="printbutton" onclick="window.print();return false;"><span class="glyphicon glyphicon-print"></span></a>
+    </div>
+
+</div>
 
 <canvas id="myCanvas" width="1186" height="406"></canvas>
 
 <script>
-    window.onload = function() {
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        base_image = new Image();
-        base_image.src = 'rijksmuseumlegenda.png';
-        base_image.onload = function(){
-            ctx.drawImage(base_image, 0, 0);
-            ctx.beginPath();
-            ctx.arc(450,303,13,0,2*Math.PI);
-            ctx.fillStyle = "red";
-            ctx.fill();
-            ctx.stroke();
-        }
-
-    };
+    window.onload = setupHeaderImage();
 </script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
