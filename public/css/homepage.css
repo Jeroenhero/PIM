@@ -16,6 +16,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    font-family: 'Arvo', serif;
 }
 
 header h1 {
@@ -28,6 +29,7 @@ header h5 {
 
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header h1 {
@@ -46,6 +48,7 @@ header h5 {
     background-color: #F1F1F1;
     min-height: 200px;
     width: 100%;
+    font-family: 'Arvo', serif;
 }
 
 .row.row-no-margin {
@@ -108,4 +111,5 @@ header h5 {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Arvo', serif;
 }
