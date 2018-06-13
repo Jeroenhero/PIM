@@ -18,11 +18,11 @@
         base_image.src = 'rijksmuseumlegenda.png';
         base_image.onload = function(){
             ctx.drawImage(base_image, 0, 0);
+            ctx.moveTo(0,0);
+            ctx.lineTo(100,200);
+            ctx.stroke();
         }
-        ctx.drawImage(img, 0, 0);
-        ctx.moveTo(0,0);
-        ctx.lineTo(100,200);
-        ctx.stroke();
+
     };
 </script>
 
