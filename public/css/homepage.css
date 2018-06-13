@@ -3,7 +3,7 @@
 }
 
 header {
-    min-height:450px;
+    min-height:550px;
     overflow: hidden;
 }
 
@@ -17,24 +17,34 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('rijksmuseum.png') no-repeat scroll center;
+    background: url('rijksmuseumcut.png') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     font-family: 'Arvo', serif;
+    position: relative;
 }
+
 
 header h1 {
-    margin-top: 0px;
-    background: rgba(104,104,104,0.5);
-    padding: 4px 5px;
+
+    background: rgba(104,104,104,0.45);
     color: white;
+    font-size: 450%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+
 }
-
-
-header h5 {
-    margin-top: 280px;
+header h5{
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 120%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+    margin-top: 67pt;
 }
 
 body {
@@ -42,23 +52,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header h1 {
-    color: white;
-    font-size: 500%;
-}
-
-header h5 {
-    color: white;
-    font-size: 200%;
-}
 
 #info {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #F1F1F1;
-    min-height: 200px;
-    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: rgba(104,104,104,0.25);
     font-family: 'Arvo', serif;
+    top: 550px;
+    right: 0px;
+    position: absolute;
+}
+
+#explanation{
+    min-height: 250px;
 }
 
 .row.row-no-margin {
