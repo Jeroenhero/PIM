@@ -7,6 +7,12 @@ header {
     overflow: hidden;
 }
 
+@media(max-width: 1400px) {
+    header {
+        min-height: 600px;
+    }
+}
+
 .header-image {
     display: block;
     width: 100%;
