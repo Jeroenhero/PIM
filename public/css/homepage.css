@@ -122,6 +122,10 @@ header h5 {
     font-family: 'Arvo', serif;
 }
 
+.selector-header {
+    color: black;
+}
+
 @media(max-width: 1114px) {
     .meisjetext {
         margin-bottom: 33px;
