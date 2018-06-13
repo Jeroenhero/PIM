@@ -3,7 +3,7 @@
 }
 
 header {
-    min-height:300px;
+    min-height:450px;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ header h1 {
 }
 
 header h5 {
-    margin-top: 140px;
+    margin-top: 280px;
 }
 
 body {
