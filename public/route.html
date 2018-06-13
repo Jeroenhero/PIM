@@ -18,8 +18,10 @@
         base_image.src = 'rijksmuseumlegenda.png';
         base_image.onload = function(){
             ctx.drawImage(base_image, 0, 0);
-            ctx.moveTo(0,0);
-            ctx.lineTo(100,200);
+            ctx.beginPath();
+            ctx.arc(450,303,13,0,2*Math.PI);
+            ctx.fillStyle = "red";
+            ctx.fill();
             ctx.stroke();
         }
 

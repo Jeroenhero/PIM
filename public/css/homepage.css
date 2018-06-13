@@ -67,8 +67,6 @@ header h5 {
     padding-bottom: 0px;
 }
 
-
-}
 .greybackground {
      backgound-color: green;
  }
@@ -112,4 +110,30 @@ header h5 {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Arvo', serif;
+}
+
+@media(max-width: 1114px) {
+    .meisjetext {
+        margin-bottom: 33px;
+    }
+}
+
+@media(max-width: 991px) {
+    .meisjetext {
+        margin-top: 40px;
+        margin-bottom: 23px;
+    }
+}
+
+@media(max-width: 831px) {
+    .meisjetext {
+        margin-top: 46px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 767px) {
+    .meisjetext {
+        margin-bottom: 0px;
+    }
 }
