@@ -58,9 +58,10 @@ body {
     padding-bottom: 0px;
     background: rgba(104,104,104,0.25);
     font-family: 'Arvo', serif;
-    top: 550px;
+    bottom: 0px;
     right: 0px;
     position: absolute;
+    min-height: 142px;
 }
 
 #explanation{
@@ -130,6 +131,10 @@ body {
 
 .selector-header {
     color: black;
+}
+
+@media(max-width: 1215px) {
+
 }
 
 @media(max-width: 1114px) {
