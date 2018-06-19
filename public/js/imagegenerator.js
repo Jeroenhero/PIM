@@ -13,7 +13,7 @@ function setupHeaderImage(numbers) {
         for(i = 0; i < numbers.length; i++) {
             var location = getHeaderPartLocation(numbers[i])
             ctx.beginPath();
-            ctx.arc(location.x, location.y, 13,0,2*Math.PI);
+            ctx.arc(location.x, location.y, 13 ,0,2*Math.PI);
             ctx.fillStyle = "red";
             ctx.fill();
             ctx.stroke();
