@@ -1,22 +1,22 @@
 .row.row-no-margin {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 
 }
 
 .col-no-padding {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    padding-bottom: 0;!important;
-    padding-top: 0;!important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
 }
 
 .thumbnail {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+    margin-top: 0 !important;
 }
 
 .selection {
@@ -41,6 +41,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+
 }
 
 .selection:hover .overlay {
