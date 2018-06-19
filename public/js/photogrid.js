@@ -1,8 +1,4 @@
-$(document).lad(function(){
-    $(".container .cbox").hide();
-    $(".container img").click(function(){
-        //do the stuff you need to do like
-        var $checkbox = $(this).parent().find(".cbox");
-        $checkbox.attr('checked', !$checkbox.attr('checked'));
-    });
-});
+function selectImage() {
+    document.getElementsByClassName('image').style.border = '5px solid #021a40';
+    document.getElementsByClassName('image').style.padding = '1';
+}
