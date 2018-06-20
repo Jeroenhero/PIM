@@ -4,15 +4,15 @@ var buttonValid=false;
 function selectImage(container) {
     var containerName = "container" + container;
     if(selected.includes(container)) {
-        document.getElementById(containerName).style.border = '0';
-        document.getElementById(containerName).style.padding = '0';
+        document.getElementById(containerName).style.border = '5px dotted white';
+        document.getElementById(containerName).style.padding = '1';
         var index = selected.indexOf(container);
         if (index>-1){
             selected.splice(index,1)
         }
     }
     else {
-        document.getElementById(containerName).style.border = '5px solid #021a40';
+        document.getElementById(containerName).style.border = '5px dotted green';
         document.getElementById(containerName).style.padding = '1';
         selected.push(container);
 
