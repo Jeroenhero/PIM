@@ -4,7 +4,7 @@ var buttonValid=false;
 function selectImage(container) {
     var containerName = "container" + container;
     if(selected.includes(container)) {
-        document.getElementById(containerName).style.border = '5px dotted white';
+        document.getElementById(containerName).style.border = '5px double white';
         document.getElementById(containerName).style.padding = '1';
         var index = selected.indexOf(container);
         if (index>-1){
@@ -12,7 +12,7 @@ function selectImage(container) {
         }
     }
     else {
-        document.getElementById(containerName).style.border = '5px dotted green';
+        document.getElementById(containerName).style.border = '5px double green';
         document.getElementById(containerName).style.padding = '1';
         selected.push(container);
 
