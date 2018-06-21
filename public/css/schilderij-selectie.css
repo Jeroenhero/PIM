@@ -5,6 +5,11 @@
     margin-top: 0;
 }
 
+#buttontext {
+    color: red;
+    visibility: hidden;
+}
+
 .col-no-padding {
     padding: 0 !important;
     margin: 0 !important;

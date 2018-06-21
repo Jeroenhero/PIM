@@ -1,5 +1,6 @@
 var selected=[];
 var buttonValid=false;
+var messageVisible = false;
 
 function selectImage(container) {
     var containerName = "container" + container;
@@ -29,4 +30,27 @@ function testButtonValidity(){
         buttonValid = false
         document.getElementById("confirmbutton").style.backgroundColor ='grey';
     }
+    if(messageVisible == true && selected.length > 0) {
+        document.getElementById("buttontext").style.visibility = "hidden";
+        messageVisible = false;
+    }
+}
+
+function executeButton() {
+    if(selected.length < 1) {
+        document.getElementById("buttontext").style.visibility = "visible";
+        messageVisible = true;
+        return;
+    }
+    var paintingString = generatePaintingString();
+    window.location.href = "route.html?paintings=\42" + paintingString + "\42";
+}
+
+function generatePaintingString() {
+    var s = "$";
+    for(var i = 0; i < selected.length; i ++) {
+        s = s + selected[i] + "n"
+    }
+    s = s + "$";
+    return s;
 }

@@ -1,6 +1,14 @@
-function test() {
-    var numbers = [1,2,3,5,4,6,8,9,11];
+function startUp() {
+    var numbers = [1,2,6,8,9,11];
+    loadPaintingsFromURL();
     setupHeaderImage(numbers)
+}
+
+function loadPaintingsFromURL() {
+    var parameters = location.search.substring(1).split("&");
+    alert("Parameters:" +parameters);
+    var paintings = parameters[0].split("$")[1];
+    alert("PaintingsUnparsed: " + paintings);
 }
 
 function setupHeaderImage(numbers) {
