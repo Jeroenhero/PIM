@@ -4,14 +4,13 @@ var headingPartLocations = []
 function startUp() {
     getHeaderPartLocations()
     loadPaintingsFromURL();
-    setupHeaderImage(paintingNumbers)
+    setTimeout(setupHeaderImage, 2000);
 
 }
 
 function loadPaintingsFromURL() {
     var parameters = location.search.substring(1).split("&");
     var paintings = parameters[0].split("$")[1];
-    alert("PaintingsUnparsed: " + paintings);
     var paintingsSplit = paintings.split("n");
     for(var i = 0; i < paintingsSplit.length - 1; i ++) {
         paintingNumbers.push(parseInt(paintingsSplit[i]));
@@ -26,8 +25,9 @@ function setupHeaderImage() {
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
         for(var i = 0; i < headingPartLocations.length; i ++) {
-            location - headingPartLocations[i];
+            location = headingPartLocations[i];
             if(paintingNumbers.includes(location.id)) {
+                console.log(location.id);
                 ctx.beginPath();
                 ctx.arc(location.x, location.y, 13 ,0,2*Math.PI);
                 ctx.fillStyle = "red";
@@ -48,11 +48,11 @@ function getHeaderPartLocations() {
             console.log(locations);
             for(var i = 0; i < locations.length; i ++) {
                 var location = locations[i];
-                var locObj = {id:parseInt(location.id), x: parseInt(location.x), y:parseInt(location.y)};
+                var locObj = {id: parseInt(location.id), x: parseInt(location.x), y:parseInt(location.y)};
                 headingPartLocations.push(locObj);
             }
         }
     }
-    console.log("Parsed " + headingPartLocations.length + " locations!")
+
 
 }
