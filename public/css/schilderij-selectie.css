@@ -105,3 +105,7 @@ header h5{
     position: fixed;
     margin-top: 67pt;
 }
+
+#header-text {
+    z-index: -1;
+}
