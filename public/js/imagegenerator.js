@@ -20,12 +20,12 @@ function loadPaintingsFromURL() {
 function setupHeaderImage() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    base_image = new Image();
+    var base_image = new Image();
     base_image.src = 'rijksmuseumlegenda.png';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
-        for(var i = 0; i < headingPartLocations.length; i ++) {
-            location = headingPartLocations[i];
+        for(var i = 1; i < headingPartLocations.length + 1; i ++) {
+            var location = headingPartLocations[i];
             if(paintingNumbers.includes(location.id)) {
                 console.log(location.id);
                 ctx.beginPath();
