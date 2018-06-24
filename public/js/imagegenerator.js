@@ -91,7 +91,7 @@ function setupPlan() {
     var canvas = document.getElementById("plattegrond");
     var ctx = canvas.getContext("2d");
     var base_image = new Image();
-    base_image.src = 'images/plattegrond2.jpg';
+    base_image.src = 'images/plattegrond.jpg';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
     }
