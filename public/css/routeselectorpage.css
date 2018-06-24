@@ -9,12 +9,21 @@
     padding-top: 30px;
 }
 
+.disclaimer {
+    visibility: hidden;
+}
+
 @media print {
     .printbutton {
         display: none;
+    }
+
+    .disclaimer {
+        visibility: visible;
     }
 }
 
 * {
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
 }
+
