@@ -6,7 +6,7 @@ function startUp() {
     getHeaderPartLocations();
     loadPaintingsFromURL();
     loadPaintingData();
-    setTimeout(setupHeaderImage, 1000);
+    setTimeout(setupHeaderImage(), 1000);
 }
 
 function loadPaintingData() {
@@ -34,10 +34,11 @@ function loadPaintingsFromURL() {
 }
 
 function setupHeaderImage() {
+
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     var base_image = new Image();
-    base_image.src = 'rijksmuseumlegenda.png';
+    base_image.src = 'images/rijksmuseumlegenda.png';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
         var locationsToGenerate = [];
@@ -65,9 +66,8 @@ function setupHeaderImage() {
                 ctx.stroke();
             }
         }
-        document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
+        setupPlan();
     }
-
 }
 
 function getHeaderPartLocations() {
@@ -85,6 +85,15 @@ function getHeaderPartLocations() {
             }
         }
     }
+}
 
-
+function setupPlan() {
+    var canvas = document.getElementById("plattegrond");
+    var ctx = canvas.getContext("2d");
+    var base_image = new Image();
+    base_image.src = 'images/plattegrond2.jpg';
+    base_image.onload = function(){
+        ctx.drawImage(base_image, 0, 0);
+    }
+    document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
 }
