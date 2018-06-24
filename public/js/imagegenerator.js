@@ -137,8 +137,11 @@ function setupPlan() {
                 ctx.fillStyle = "red";
                 ctx.fill();
                 ctx.stroke();
+
             }
         }
+        document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
+
     }
 }
 

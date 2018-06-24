@@ -25,6 +25,10 @@
     .disclaimer {
         visibility: visible;
     }
+
+    .side-bar-click {
+        display: none;
+    }
 }
 
 * {
