@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .printbutton {
     padding-top: 10px;
     margin-top: 20px;
@@ -27,3 +31,54 @@
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
 }
 
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+header {
+    min-height: 120px;
+    overflow: hidden;
+}
+
+header h1 {
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 450%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+
+}
+header h5{
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 120%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+    margin-top: 67pt;
+}
+
+.header-image {
+    position: relative;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+header h5{
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 120%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+    margin-top: 67pt;
+}
