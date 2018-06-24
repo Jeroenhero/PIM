@@ -18,6 +18,7 @@
     padding: 0 !important;
     margin: 0 !important;
     float: left;
+    object-fit: cover;
 }
 
 
@@ -33,16 +34,15 @@
     border-width: 5px;
     border-style: double;
     border-color: white;
+
 }
 
 .image {
     display: block;
-    object-fit: fill;
-    max-width: 170px;
-    max-height: 150px;
-    overflow: hidden;
 
+    overflow: hidden;
 }
+
 
 .overlay {
     position: absolute;
@@ -55,6 +55,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+
 
 }
 
