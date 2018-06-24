@@ -54,7 +54,7 @@ function setupHeaderImage() {
             }
         }
 
-        for(var i = 1; i < headingPartLocations.length + 1; i ++) {
+        for(var i = 0; i < headingPartLocations.length + 0; i ++) {
             var location = headingPartLocations[i];
             if(locationsToGenerate.includes(location.id)) {
                 console.log(location.id);
@@ -65,7 +65,9 @@ function setupHeaderImage() {
                 ctx.stroke();
             }
         }
+        document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
     }
+
 }
 
 function getHeaderPartLocations() {
