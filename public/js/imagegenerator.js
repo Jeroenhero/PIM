@@ -1,11 +1,27 @@
 var paintingNumbers = []
 var headingPartLocations = []
+var paintings = []
 
 function startUp() {
-    getHeaderPartLocations()
+    getHeaderPartLocations();
     loadPaintingsFromURL();
+    loadPaintingData();
     setTimeout(setupHeaderImage, 2000);
+}
 
+function loadPaintingData() {
+    var request = new XMLHttpRequest();
+    request.open("GET", "data/paintings.json", true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if ( request.readyState === 4 && request.status === 200 ) {
+            var paintingsUnparsed = JSON.parse(request.responseText);
+            console.log(paintingsUnparsed);
+            for(var i = 0; i < paintingsUnparsed.length; i ++) {
+                paintings.push(paintingsUnparsed[i])
+            }
+        }
+    }
 }
 
 function loadPaintingsFromURL() {
@@ -24,9 +40,23 @@ function setupHeaderImage() {
     base_image.src = 'rijksmuseumlegenda.png';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
+        var locationsToGenerate = [];
+
+        for(var i = 0; i < paintings.length; i ++) {
+            var painting = paintings[i];
+            var id = parseInt(painting.id);
+            if(paintingNumbers.includes(id)) {
+                for(var l = 0; l < painting.buildinglocs.length; l ++) {
+                    if(!locationsToGenerate.includes(painting.buildinglocs[l])){
+                        locationsToGenerate.push(painting.buildinglocs[l]);
+                    }
+                }
+            }
+        }
+
         for(var i = 1; i < headingPartLocations.length + 1; i ++) {
             var location = headingPartLocations[i];
-            if(paintingNumbers.includes(location.id)) {
+            if(locationsToGenerate.includes(location.id)) {
                 console.log(location.id);
                 ctx.beginPath();
                 ctx.arc(location.x, location.y, 13 ,0,2*Math.PI);
