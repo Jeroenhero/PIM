@@ -18,7 +18,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('rijksmuseumcut.png') no-repeat scroll center;
+    background: url('rijksmuseumcut.jpg') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -59,11 +59,14 @@ body {
     padding-bottom: 0px;
     background: rgba(104,104,104,0.25);
     font-family: 'Arvo', serif;
-    bottom: 0px;
-    right: 0px;
     position: absolute;
-    min-height: 142px;
+    height: 124px;
+    right: 0;
+    bottom: 0;
+
+
 }
+
 
 #explanation{
     min-height: 250px;
