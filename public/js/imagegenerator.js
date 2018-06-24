@@ -6,7 +6,7 @@ function startUp() {
     getHeaderPartLocations();
     loadPaintingsFromURL();
     loadPaintingData();
-    setTimeout(setupHeaderImage, 2000);
+    setTimeout(setupHeaderImage, 1000);
 }
 
 function loadPaintingData() {
