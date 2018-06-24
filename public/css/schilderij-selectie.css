@@ -119,5 +119,16 @@ header h5{
 }
 
 .header-image {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arvo', serif;
+    position: relative;
+}
+
+header h5{
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 120%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+    margin-top: 67pt;
 }

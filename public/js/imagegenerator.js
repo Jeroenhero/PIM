@@ -38,7 +38,7 @@ function setupHeaderImage() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     var base_image = new Image();
-    base_image.src = 'images/rijksmuseumlegenda.png';
+    base_image.src = 'images/rijksmuseumlegenda.jpg';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
         var locationsToGenerate = [];
