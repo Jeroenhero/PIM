@@ -4,21 +4,21 @@
     "name": "Wapens & Schepen",
     "description": "Wapens, zwaarden, kanonnen en andere wapentuig",
     "buildinglocs": [8,9,3,4],
-    "planlocs": [3.2, 2.15, 1.5, 0.12, 0.13, 2.1]
+    "planlocs": [3.02, 2.15, 1.05, 0.12, 0.13, 2.01]
   },
   {
     "id": 2,
     "name": "Bekende Schilders",
     "description": "Vincent, Rembrandt, Cornelius Troost, Jan van scorel, Joachim Beuckelaar",
     "buildinglocs": [11,10,3,2],
-    "planlocs": [0.6, 1.18, 2.8, 1.1]
+    "planlocs": [0.06, 1.18, 2.08, 1.01]
   },
   {
     "id": 3,
     "name": "Abstract",
     "description": "Moderne Kunst",
     "buildinglocs": [1],
-    "planlocs": [3.4, 3.3, 3.2]
+    "planlocs": [3.04, 3.03, 3.02]
   },
   {
     "id": 4,
@@ -39,27 +39,27 @@
     "name": "Vazen",
     "description": "Allemaal Vazen",
     "buildinglocs": [4, 3, 2, 9],
-    "planlocs": [0.7, 1.1, 2.22, 2.1, 2.3]
+    "planlocs": [0.07, 1.01, 2.22, 2.01, 2.03]
   },
   {
     "id": 7,
     "name": "Beelden",
     "description": "Allemaal Beelden",
     "buildinglocs": [11,3,9],
-    "planlocs": [1.9, 1.4, 0.4, 11.0, 1.5, 2.18, 0.1]
+    "planlocs": [1.09, 1.04, 0.04, 11.0, 1.05, 2.18, 0.01]
   },
   {
     "id": 8,
     "name": "Schilderijen",
     "description": "Allemaal Schilderijen",
     "buildinglocs": [4, 11, 3, 10, 2, 9],
-    "planlocs": [0.6, 0.1, 1.12,1.7,1.17, 1.11, 1.1, 1.18, 2.8, 2.6, 2.27, 2.1, 2.11, 2.5, 2.14, 2.10, 2.11, 2.12, 2.13]
+    "planlocs": [0.06, 0.01, 1.12,1.07,1.17, 1.11, 1.01, 1.18, 2.08, 2.06, 2.27, 2.01, 2.11, 2.05, 2.14, 2.10, 2.11, 2.12, 2.13]
   },
   {
     "id": 9,
     "name": "Overige Objecten",
     "description": "Allemaal overige objecten zoals mode, stoelen, Poppenkasten",
     "buildinglocs": [2, 9, 4, 11, 8],
-    "planlocs": [2.20, 2.5, 2.9, 0.9, 0.4, 11.0, 0.4, 2.8, 1.13, 12.0, 0.7,2.4, 2.2, 3.2]
+    "planlocs": [2.20, 2.05, 2.09, 0.09, 0.04, 11.0, 0.04, 2.08, 1.13, 12.0, 0.07, 2.04, 2.02, 3.02]
   }
 ]

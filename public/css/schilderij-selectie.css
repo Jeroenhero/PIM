@@ -114,13 +114,10 @@ header h5{
     margin-top: 67pt;
 }
 
-#header-text {
-    z-index: -1;
-}
-
 .header-image {
-    font-family: 'Arvo', serif;
     position: relative;
+    font-family: 'Arvo', serif;
+    text-align: center;
 }
 
 header h5{

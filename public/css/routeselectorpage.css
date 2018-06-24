@@ -8,8 +8,13 @@
     color: black;
     padding-top: 30px;
 }
+
 @media print {
     .printbutton {
         display: none;
     }
+}
+
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
 }

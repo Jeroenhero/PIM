@@ -1,12 +1,14 @@
 var paintingNumbers = []
 var headingPartLocations = []
+var floorPlanLocations = []
 var paintings = []
 
 function startUp() {
-    getHeaderPartLocations();
-    loadPaintingsFromURL();
-    loadPaintingData();
-    setTimeout(setupHeaderImage(), 1000);
+    getFloorPlanLocations();
+    // getHeaderPartLocations();
+    // loadPaintingsFromURL();
+    // loadPaintingData();
+    // setTimeout(setupHeaderImage(), 1000);
 }
 
 function loadPaintingData() {
@@ -34,7 +36,6 @@ function loadPaintingsFromURL() {
 }
 
 function setupHeaderImage() {
-
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     var base_image = new Image();
@@ -87,6 +88,25 @@ function getHeaderPartLocations() {
     }
 }
 
+function getFloorPlanLocations() {
+    var request = new XMLHttpRequest();
+    request.open("GET", "data/floorplanlocations.json", true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if ( request.readyState === 4 && request.status === 200 ) {
+            var locations = JSON.parse(request.responseText);
+            console.log(locations);
+            for(var i = 0; i < locations.length; i ++) {
+                var location = locations[i];
+                var locObj = {id: parseFloat(location.id), x: parseInt(location.x), y:parseInt(location.y)};
+                floorPlanLocations.push(locObj);
+            }
+
+            setupPlan();
+        }
+    }
+}
+
 function setupPlan() {
     var canvas = document.getElementById("plattegrond");
     var ctx = canvas.getContext("2d");
@@ -94,6 +114,15 @@ function setupPlan() {
     base_image.src = 'images/plattegrond.jpg';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
+        for(var i = 0; i < floorPlanLocations.length; i ++) {
+            var location = floorPlanLocations[i];
+            ctx.beginPath();
+            ctx.arc(location.x, location.y, 10,0,2*Math.PI);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.stroke();
+        }
+
     }
     document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
 }
