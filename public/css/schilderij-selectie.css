@@ -55,6 +55,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+    cursor: pointer
 
 
 }
@@ -143,5 +144,7 @@ div.explanation {
     margin-left: 60px !important;
     margin-top: 20px !important;
 }
+
+
 
 
