@@ -138,18 +138,10 @@ div.explanation {
     text-align: center;
     background: rgba(104,104,104,0.45);
     border: 2px solid gray;
+    position: fixed;
+    padding: 13px !important;
+    margin-left: 60px !important;
+    margin-top: 20px !important;
 }
 
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 120px;
-    padding: 5px;
-}
 
-div.sticky2 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 150px;
-    padding: 5px;
-}
