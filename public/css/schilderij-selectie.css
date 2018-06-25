@@ -103,6 +103,8 @@ header h1 {
     max-width: 260pt;
     position: fixed;
 
+
+
 }
 header h5{
     background: rgba(104,104,104,0.45);
@@ -112,6 +114,7 @@ header h5{
     max-width: 260pt;
     position: fixed;
     margin-top: 67pt;
+
 }
 
 .header-image {
@@ -128,4 +131,25 @@ header h5{
     max-width: 260pt;
     position: fixed;
     margin-top: 67pt;
+}
+
+div.explanation {
+    color: white;
+    text-align: center;
+    background: rgba(104,104,104,0.45);
+    border: 2px solid gray;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    padding: 5px;
+}
+
+div.sticky2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+    padding: 5px;
 }

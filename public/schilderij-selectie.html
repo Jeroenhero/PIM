@@ -23,61 +23,68 @@
         <h1 id="header-text">Rijks<b>Route</b></h1>
 </header>
 </a>
-<div class="row container">
-        <div class="col-xs-12 col-sm-3 col-no-padding">
+
+<div class="container-fluid sticky2">
+<div class="row">
+
+        <div class="col-xs-12 col-sm-3 col-no-padding explanation sticky">De foto's hier rechts staan elk
+            voor een categorie. Selecteer het aantal foto's naar wens, en Rijks<b>Route</b> genereert
+            uw persoonlijke route <br>door het rijksmuseum!
         </div>
 
-        <div  id="container1" class="col-xs-12 col-sm-3 col-no-padding selection">
-
+        <div  id="container1" class="col-xs-12 col-sm-2 col-no-padding selection">
             <img class=" img-responsive image" src="images/Foto%201.jpg">
             <div onclick= 'selectImage(1)' class="overlay">
-                <div class="text">Selecteer dit schilderij!
+                <div class="text">Wapens & Schepen
                 </div>
             </div>
         </div>
 
-    <div id="container2" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div id="container2" class="col-xs-12 col-sm-2 col-no-padding selection">
         <img  class=" img-responsive image" src="images/Foto%202.jpg">
         <div onclick= 'selectImage(2)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Bekende Schilders
             </div>
         </div>
     </div>
 
-        <div id="container3" class="col-xs-12 col-sm-3 col-no-padding selection">
+        <div id="container3" class="col-xs-12 col-sm-2 col-no-padding selection">
             <img class=" img-responsive image" src="images/Foto%203.jpg">
             <div onclick= 'selectImage(3)' class="overlay">
-                <div class="text">Selecteer dit schilderij!
+                <div class="text">Abstract
                 </div>
             </div>
         </div>
+
+    <div class="col-xs-12 col-sm-3 col-no-padding">
+    </div>
 </div>
 
-<div class="row container">
+<div class="row">
     <div class="col-xs-12 col-sm-3 col-no-padding">
     </div>
 
-    <div  id="container4" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div  id="container4" class="col-xs-12 col-sm-2 col-no-padding selection">
 
         <img class=" img-responsive image" src="images/Foto%204.jpg">
         <div onclick= 'selectImage(4)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Aziatisch
             </div>
         </div>
     </div>
 
-    <div id="container5" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div id="container5" class="col-xs-12 col-sm-2 col-no-padding selection">
         <img  class="img-responsive image" src="images/Foto%205.jpg">
         <div onclick= 'selectImage(5)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">De erezaal
             </div>
         </div>
     </div>
 
-    <div id="container6" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div id="container6" class="col-xs-12 col-sm-2 col-no-padding selection">
         <img class="img-responsive image" src="images/Foto%206.jpg">
         <div onclick= 'selectImage(6)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Vazen
             </div>
         </div>
     </div>
@@ -85,31 +92,31 @@
     </div>
 </div>
 
-<div class="row container">
+<div class="row">
     <div class="col-xs-12 col-sm-3 col-no-padding">
     </div>
 
-    <div  id="container7" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div  id="container7" class="col-xs-12 col-sm-2 col-no-padding selection">
 
         <img class="img-responsive image" src="images/Foto%207.jpg">
         <div onclick= 'selectImage(7)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Beelden
             </div>
         </div>
     </div>
 
-    <div id="container8" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div id="container8" class="col-xs-12 col-sm-2 col-no-padding selection">
         <img  class="img-responsive image" src="images/Foto%208.jpg">
             <div onclick= 'selectImage(8)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Schilderijen
             </div>
         </div>
     </div>
 
-    <div id="container9" class="col-xs-12 col-sm-3 col-no-padding selection">
+    <div id="container9" class="col-xs-12 col-sm-2 col-no-padding selection">
         <img class="img-responsive image" src="images/Foto%209.jpg">
         <div onclick= 'selectImage(9)' class="overlay">
-            <div class="text">Selecteer dit schilderij!
+            <div class="text">Overige objecten
             </div>
         </div>
     </div>
@@ -117,25 +124,31 @@
     </div>
 
 </div>
-<div class="row container">
+<div class="row">
 
     <div class="col-xs-12 col-sm-3 col-no-padding">
     </div>
 
-    <div class="col-xs-12 col-sm-3 col-no-padding">
+    <div class="col-xs-12 col-sm-2 col-no-padding">
     </div>
 
-    <div class="col-xs-12 col-sm-3 col-no-padding text-center">
+    <div class="col-xs-12 col-sm-2 col-no-padding text-center">
         <button class="button" id="confirmbutton" onclick="executeButton()">Genereer je route</button>
         <p id="buttontext">Please select at least one painting in order to generate a route!</p>
     </div>
 
+    <div class="col-xs-12 col-sm-2 col-no-padding">
+    </div>
+
     <div class="col-xs-12 col-sm-3 col-no-padding">
     </div>
 
 
 
+
 </div>
+</div>
+
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
