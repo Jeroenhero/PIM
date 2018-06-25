@@ -31,7 +31,7 @@
 .selection {
     position: relative;
     width: 50%;
-    border-width: 5px;
+    border-width: 6px;
     border-style: double;
     border-color: white;
 
@@ -41,6 +41,7 @@
     display: block;
 
     overflow: hidden;
+
 }
 
 
@@ -61,7 +62,7 @@
 }
 
 .selection:hover .overlay {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .text {
@@ -74,6 +75,15 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Arvo', serif;
+
+    /*Disable the selecting of text (Which might accidentally happen while hovering)*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .selector-header {
@@ -145,4 +155,6 @@ div.explanation {
     padding: 13px !important;
     margin-left: 60px !important;
     margin-top: 20px !important;
+    cursor: default;
 }
+
