@@ -38,3 +38,21 @@ header h5{
     position: fixed;
     margin-top: 67pt;
 }
+
+#page-filler-top {
+    min-height: 140px;
+}
+
+#page-filler-top h3 {
+    padding-top: 20px;
+}
+
+.fancy-button {
+    margin-top: 40px;
+    height: 60px;
+}
+
+.routes {
+    height: 800px;
+    background-color: #F7F8FA;
+}
