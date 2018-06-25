@@ -17,7 +17,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('rijksmuseumcut.jpg') no-repeat scroll center;
+    background: url('oudrijkscut.jpg') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -56,14 +56,12 @@ body {
 #info {
     padding-top: 0px;
     padding-bottom: 0px;
-    background: rgba(104,104,104,0.25);
     font-family: 'Arvo', serif;
     position: absolute;
     height: 124px;
     right: 0;
-    bottom: 0;
-
-
+    bottom: 100px;
+    color: white;
 }
 
 
