@@ -106,45 +106,6 @@ function getFloorPlanLocations() {
     }
 }
 
-// function setupPlan() {
-//     var canvas = document.getElementById("plattegrond");
-//     var ctx = canvas.getContext("2d");
-//     var base_image = new Image();
-//     base_image.src = 'images/plattegrond.jpg';
-//     base_image.onload = function(){
-//         ctx.drawImage(base_image, 0, 0);
-//         var locationsToGenerate = [];
-//
-//         for(var i = 0; i < paintings.length; i ++) {
-//             var painting = paintings[i];
-//             var id = parseInt(painting.id);
-//             if(paintingNumbers.includes(id)) {
-//                 console.log()
-//                 for(var l = 0; l < painting.planlocs.length; l ++) {
-//                     if(!locationsToGenerate.includes(painting.planlocs[l])){
-//                         locationsToGenerate.push(painting.planlocs[l]);
-//                     }
-//                 }
-//             }
-//         }
-//
-//         for(var i = 0; i < floorPlanLocations.length + 0; i ++) {
-//             var location = floorPlanLocations[i];
-//             if(locationsToGenerate.includes(location.id)) {
-//                 console.log(location.id);
-//                 ctx.beginPath();
-//                 ctx.arc(location.x, location.y, 10 ,0,2*Math.PI);
-//                 ctx.fillStyle = "red";
-//                 ctx.fill();
-//                 ctx.stroke();
-//
-//             }
-//         }
-//         document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
-//
-//     }
-// }
-
 function setupPlan() {
     var canvas = document.getElementById("plattegrond");
     var ctx = canvas.getContext("2d");
@@ -152,15 +113,54 @@ function setupPlan() {
     base_image.src = 'images/plattegrond.jpg';
     base_image.onload = function(){
         ctx.drawImage(base_image, 0, 0);
-        for(var i = 0; i < floorPlanLocations.length; i ++) {
-            var location = floorPlanLocations[i];
-            ctx.beginPath();
-            ctx.arc(location.x, location.y, 10,0,2*Math.PI);
-            ctx.fillStyle = "red";
-            ctx.fill();
-            ctx.stroke();
+        var locationsToGenerate = [];
+
+        for(var i = 0; i < paintings.length; i ++) {
+            var painting = paintings[i];
+            var id = parseInt(painting.id);
+            if(paintingNumbers.includes(id)) {
+                console.log()
+                for(var l = 0; l < painting.planlocs.length; l ++) {
+                    if(!locationsToGenerate.includes(painting.planlocs[l])){
+                        locationsToGenerate.push(painting.planlocs[l]);
+                    }
+                }
+            }
         }
 
+        for(var i = 0; i < floorPlanLocations.length + 0; i ++) {
+            var location = floorPlanLocations[i];
+            if(locationsToGenerate.includes(location.id)) {
+                console.log(location.id);
+                ctx.beginPath();
+                ctx.arc(location.x, location.y, 10 ,0,2*Math.PI);
+                ctx.fillStyle = "red";
+                ctx.fill();
+                ctx.stroke();
+
+            }
+        }
+        document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
+
     }
-    document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
 }
+//
+// function setupPlan() {
+//     var canvas = document.getElementById("plattegrond");
+//     var ctx = canvas.getContext("2d");
+//     var base_image = new Image();
+//     base_image.src = 'images/plattegrond.jpg';
+//     base_image.onload = function(){
+//         ctx.drawImage(base_image, 0, 0);
+//         for(var i = 0; i < floorPlanLocations.length; i ++) {
+//             var location = floorPlanLocations[i];
+//             ctx.beginPath();
+//             ctx.arc(location.x, location.y, 10,0,2*Math.PI);
+//             ctx.fillStyle = "red";
+//             ctx.fill();
+//             ctx.stroke();
+//         }
+//
+//     }
+//     document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
+// }
