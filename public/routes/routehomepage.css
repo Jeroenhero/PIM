@@ -56,3 +56,11 @@ header h5{
     height: 800px;
     background-color: #F7F8FA;
 }
+
+div.photodiv {
+    border-top: 5px double black;
+    border-right: 5px double black;
+    border-left: 5px double black;
+    border-bottom: 50px solid black;
+
+}
