@@ -144,7 +144,3 @@ div.explanation {
     margin-left: 60px !important;
     margin-top: 20px !important;
 }
-
-#confirmbutton:hover {
-    cursor: not-allowed;
-}
