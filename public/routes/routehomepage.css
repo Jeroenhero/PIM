@@ -1,0 +1,40 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    min-height:400px;
+    overflow: hidden;
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('images/museum.jpg') no-repeat scroll center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Arvo', serif;
+    position: relative;
+}
+
+header h1 {
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 450%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+
+}
+header h5{
+    background: rgba(104,104,104,0.45);
+    color: white;
+    font-size: 120%;
+    min-width: 260pt;
+    max-width: 260pt;
+    position: fixed;
+    margin-top: 67pt;
+}
