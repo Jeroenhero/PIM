@@ -53,14 +53,18 @@ header h5{
 }
 
 .routes {
-    height: 800px;
+    height: 1100px;
     background-color: #F7F8FA;
 }
 
 div.photodiv {
-    border-top: 5px double black;
-    border-right: 5px double black;
-    border-left: 5px double black;
-    border-bottom: 50px solid black;
+    height: 400px;
+}
 
+div.photodiv img {
+    background-color: white;
+    border-top: 40px solid white;
+    border-right: 40px solid white;
+    border-left: 40px solid white;
+    margin-top: 30px;
 }
