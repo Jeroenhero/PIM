@@ -1,10 +1,15 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    cursor: default;
 }
 
 header {
     min-height:400px;
     overflow: hidden;
+}
+
+#header-pointer, .header-text {
+    cursor: pointer;
 }
 
 .header-image {
@@ -27,9 +32,10 @@ header h1 {
     min-width: 260pt;
     max-width: 260pt;
     position: fixed;
-
+    cursor: pointer;
 }
 header h5{
+    cursor: pointer;
     background: rgba(104,104,104,0.45);
     color: white;
     font-size: 120%;
@@ -53,18 +59,18 @@ header h5{
 }
 
 .routes {
-    height: 1100px;
+    height: 950px;
     background-color: #F7F8FA;
 }
 
 div.photodiv {
     height: 400px;
+    margin-bottom: 30px;
 }
 
 div.photodiv img {
     background-color: white;
-    border-top: 40px solid white;
-    border-right: 40px solid white;
-    border-left: 40px solid white;
-    margin-top: 30px;
+    border: 40px solid white;
+    margin-top: 40px;
+    cursor: pointer;
 }
