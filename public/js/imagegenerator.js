@@ -68,6 +68,7 @@ function setupHeaderImage() {
             }
         }
         setupPlan();
+
     }
 }
 
@@ -164,3 +165,4 @@ function setupPlan() {
 //     }
 //     document.getElementById("page-title").innerHTML = "Jouw persoonlijke route door het Rijksmuseum:";
 // }
+
