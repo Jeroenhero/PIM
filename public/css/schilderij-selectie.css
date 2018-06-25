@@ -39,9 +39,7 @@
 
 .image {
     display: block;
-
     overflow: hidden;
-
 }
 
 
@@ -57,8 +55,6 @@
     transition: .5s ease;
     background-color: black;
     cursor: pointer
-
-
 }
 
 .selection:hover .overlay {
@@ -115,9 +111,6 @@ header h1 {
     min-width: 260pt;
     max-width: 260pt;
     position: fixed;
-
-
-
 }
 header h5{
     background: rgba(104,104,104,0.45);
@@ -127,7 +120,6 @@ header h5{
     max-width: 260pt;
     position: fixed;
     margin-top: 67pt;
-
 }
 
 .header-image {
