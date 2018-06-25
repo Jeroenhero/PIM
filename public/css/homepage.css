@@ -30,7 +30,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('Oud rijksmuseum.jpg') no-repeat scroll center;
+    background: url('rijksmuseum.png') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -74,7 +74,6 @@ body {
     height: 124px;
     right: 0;
     bottom: 100px;
-    color: white;
 }
 
 
