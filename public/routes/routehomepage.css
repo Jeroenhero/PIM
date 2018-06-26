@@ -16,7 +16,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../css/Oud rijksmuseum.jpg') no-repeat scroll center;
+    background: url('../css/museum_old.jpg') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -73,4 +73,26 @@ div.photodiv img {
     border: 40px solid white;
     margin-top: 40px;
     cursor: pointer;
+}
+
+.img {
+
+}
+
+@media (max-width: 991px) {
+    .fancy-button {
+        margin-top:10px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .header h5, .header h1 {
+        position: relative;
+    }
+    .routes {
+        height: 1800px;
+    }
+
 }
