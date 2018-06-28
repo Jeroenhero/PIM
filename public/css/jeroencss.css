@@ -37,3 +37,7 @@ body {
     margin-left: 50px;
     max-width: 90%;
 }
+
+.inside-text {
+    margin: 20px;
+}
