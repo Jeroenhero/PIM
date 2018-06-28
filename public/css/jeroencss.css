@@ -41,3 +41,9 @@ body {
 .inside-text {
     margin: 20px;
 }
+
+.btn {
+    width: 98%;
+    margin-right:40px;
+    margin-left: 15px;
+}
