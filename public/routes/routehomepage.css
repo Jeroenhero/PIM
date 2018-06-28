@@ -63,7 +63,11 @@ header h5{
     background-color: #F7F8FA;
 }
 
-div.photodiv {
+.textdiv {
+    margin-top: 40px;
+}
+
+div.photodiv, .textdiv{
     height: 400px;
     margin-bottom: 30px;
 }
@@ -86,8 +90,6 @@ div.photodiv img {
 }
 
 @media (max-width: 767px) {
-
-
     .header h5, .header h1 {
         position: relative;
     }

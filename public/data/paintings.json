@@ -10,8 +10,8 @@
     "id": 2,
     "name": "Bekende Schilders",
     "description": "Vincent, Rembrandt, Cornelius Troost, Jan van scorel, Joachim Beuckelaar",
-    "buildinglocs": [11,10,3,2],
-    "planlocs": [0.06, 1.18, 2.08, 1.01]
+    "buildinglocs": [11,10,3,2,6],
+    "planlocs": [0.06, 1.18, 2.08, 1.01, 10.0]
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "id": 4,
     "name": "Aziatisch",
     "description": "Aziatische Kunst",
-    "buildinglocs": [1],
+    "buildinglocs": [11],
     "planlocs": [11.0]
   },
   {
