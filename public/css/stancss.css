@@ -6,7 +6,7 @@ header
 }
 
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #yellowfillertext{
@@ -34,8 +34,15 @@ body {
     margin-left: 100px;
 }
 
+
 .lecturestable {
     margin-left: 30px;
     max-width: 90%;
     font-size: 120%;
+}
+
+.introtext{
+    font-size:120%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
