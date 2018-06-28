@@ -161,13 +161,6 @@ body {
     }
 }
 
-/*@media(max-width: 831px) {*/
-    /*.meisjetext {*/
-        /*margin-top: 46px;*/
-        /*margin-bottom: 50px;*/
-    /*}*/
-/*}*/
-
 @media(max-width: 767px) {
     .meisjetext {
         margin-bottom: 0px;
