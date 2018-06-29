@@ -16,7 +16,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../css/museum_old.jpg') no-repeat scroll center;
+    background: url('../images/museum_old.jpg') no-repeat scroll center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

@@ -34,7 +34,6 @@
     border-width: 6px;
     border-style: double;
     border-color: white;
-
 }
 
 .image {
@@ -85,6 +84,7 @@
 .selector-header {
     color: black;
 }
+
 .button {
     background-color: grey;
     border: none;
@@ -99,6 +99,7 @@
     margin-top: 20px;
     height: 60px;
 }
+
 header {
     min-height: 120px;
     overflow: hidden;
@@ -112,6 +113,7 @@ header h1 {
     max-width: 260pt;
     position: fixed;
 }
+
 header h5{
     background: rgba(104,104,104,0.45);
     color: white;

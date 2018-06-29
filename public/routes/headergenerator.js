@@ -1,4 +1,3 @@
-
 var headingPartLocations = []
 
 function setupHeaderImageJustInts(ints) {
